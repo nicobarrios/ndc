@@ -52,13 +52,27 @@
             box-shadow: 0 0 0 2px #3969B1; /* Use corporate blue for focus ring */
             border-color: #3969B1;
         }
+
+        /* --- NUEVO CÓDIGO CSS PARA EL TAMAÑO DEL LOGO --- */
+        /* Aquí definimos el tamaño para el logo en la cabecera */
+        .logo-header {
+            height: 4rem; /* Equivalente a h-16 en Tailwind. Puedes ajustar este valor */
+            width: auto; /* Mantiene la proporción */
+        }
+        /* Aquí definimos el tamaño para el logo en el pie de página */
+        .logo-footer {
+            height: 3rem; /* Equivalente a h-12 en Tailwind. Puedes ajustar este valor */
+            width: auto; /* Mantiene la proporción */
+        }
+        /* --- FIN DEL NUEVO CÓDIGO CSS --- */
+
     </style>
 </head>
 <body class="bg-corporate-white text-corporate-black">
 
     <header class="bg-corporate-white shadow-md sticky top-0 z-50">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <img src="/logo.png" alt="RWN Construction FZCO Logo" class="h-12"> <div class="hidden md:flex space-x-6 font-regular">
+            <img src="logo.png" alt="RWN Construction FZCO Logo" class="logo-header"> <div class="hidden md:flex space-x-6 font-regular">
                 <a href="#about" class="hover:text-corporate-blue">About Us</a>
                 <a href="#mission-vision" class="hover:text-corporate-blue">Mission & Vision</a>
                 <a href="#values" class="hover:text-corporate-blue">Core Values</a>
@@ -75,12 +89,12 @@
     <section class="hero-section text-corporate-white py-20 md:py-32" id="home">
         <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
             <div>
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 leading-tight">Your trusted partner for quality construction materials</h1>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 leading-tight">Your Trusted Partner for Quality Construction Materials</h1>
                 <p class="text-lg md:text-xl mb-6 font-regular">RWN Construction FZCO is your premier source for building and construction materials in the Middle East. We are committed to quality, reliability, and strong partnerships.</p>
                 <a href="#contact" class="bg-corporate-blue text-corporate-white px-8 py-3 rounded-md text-lg font-regular inline-block cta-button">Request a Quote</a>
             </div>
             <div class="bg-corporate-white p-8 rounded-lg shadow-xl">
-                <h3 class="text-2xl font-extrabold text-corporate-black mb-6 text-center">Get in touch</h3>
+                <h3 class="text-2xl font-extrabold text-corporate-black mb-6 text-center">Get in Touch</h3>
                 <form action="#" method="POST">
                     <div class="mb-4">
                         <label for="hero-name" class="block text-corporate-black mb-2 font-regular">Name</label>
@@ -94,7 +108,7 @@
                         <label for="hero-message" class="block text-corporate-black mb-2 font-regular">Message</label>
                         <textarea id="hero-message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-corporate-blue focus:border-corporate-blue" required></textarea>
                     </div>
-                    <button type="submit" class="w-full bg-corporate-blue text-corporate-white px-6 py-3 rounded-md font-regular hover:bg-opacity-90 cta-button">Send message</button>
+                    <button type="submit" class="w-full bg-corporate-blue text-corporate-white px-6 py-3 rounded-md font-regular hover:bg-opacity-90 cta-button">Send Message</button>
                 </form>
             </div>
         </div>
@@ -108,11 +122,11 @@
             </p>
             <div class="grid md:grid-cols-2 gap-10 max-w-4xl mx-auto text-left">
                 <div class="bg-corporate-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-extrabold text-corporate-blue mb-3">Our foundation</h3>
+                    <h3 class="text-xl font-extrabold text-corporate-blue mb-3">Our Foundation</h3>
                     <p class="text-gray-700 font-regular">Leveraging a solid base of experience in nuclear construction, luxury real estate, logistics, and international transport, our founders drive RWN towards success, ensuring expert knowledge and industry insight.</p>
                 </div>
                 <div class="bg-corporate-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-extrabold text-corporate-blue mb-3">Our commitment</h3>
+                    <h3 class="text-xl font-extrabold text-corporate-blue mb-3">Our Commitment</h3>
                     <p class="text-gray-700 font-regular">We emphasize quality products, reliable service, and strong partnerships, establishing RWN FZCO as a trusted provider for contractors, developers, and construction professionals across the industry.</p>
                 </div>
             </div>
@@ -123,11 +137,11 @@
     <section id="mission-vision" class="py-16 md:py-24">
         <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
             <div class="bg-corporate-blue text-corporate-white p-8 rounded-lg shadow-lg">
-                <h3 class="text-3xl font-extrabold mb-4">Our mission</h3>
+                <h3 class="text-3xl font-extrabold mb-4">Our Mission</h3>
                 <p class="text-lg font-regular">"Our mission is to provide a comprehensive range of top-quality building materials, exceptional service, and value-added solutions to our customers in the construction industry in Dubai. Through our expertise, reliability, and commitment to excellence, we aim to be the preferred supplier and trusted partner, facilitating the successful completion of construction projects and contributing to the growth and development of UAE region environment."</p>
             </div>
             <div class="bg-gray-100 text-corporate-black p-8 rounded-lg shadow-lg">
-                <h3 class="text-3xl font-extrabold text-corporate-blue mb-4">Our vision</h3>
+                <h3 class="text-3xl font-extrabold text-corporate-blue mb-4">Our Vision</h3>
                 <p class="text-lg font-regular">"To be the foremost supplier of construction materials in the Middle East region, known for our exceptional quality, innovative solutions, and unwavering commitment to customer success. We aim to expand our presence throughout the region while maintaining our reputation for excellence, reliability, and integrity."</p>
             </div>
         </div>
@@ -135,7 +149,7 @@
 
     <section id="values" class="py-16 md:py-24 bg-gray-50">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-extrabold text-corporate-black text-center mb-12">Our guiding principles</h2>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-corporate-black text-center mb-12">Our Guiding Principles</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
                 <div class="text-center p-6 bg-corporate-white rounded-lg shadow-md">
                      <div class="bg-corporate-blue text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
@@ -178,7 +192,7 @@
 
      <section id="why-choose-us" class="py-16 md:py-24">
         <div class="container mx-auto px-6 text-center">
-            <h2 class="text-3xl md:text-4xl font-extrabold text-corporate-black mb-6">Comprehensive solutions for your construction needs</h2>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-corporate-black mb-6">Comprehensive Solutions for Your Construction Needs</h2>
             <p class="max-w-3xl mx-auto text-lg text-gray-700 mb-10 font-regular">
                 We offer a comprehensive range of top-quality materials backed by expert knowledge and reliable service. Our commitment to your satisfaction makes us the preferred choice.
             </p>
@@ -204,7 +218,7 @@
         <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
             <img src="https://placehold.co/600x400/f0f0f0/555555?text=Middle+East+Map+Concept" alt="[Imagen conceptual del mapa de Oriente Medio]" class="rounded-lg shadow-lg" onerror="this.src='https://placehold.co/600x400/f0f0f0/555555?text=Image+Not+Found'; this.alt='Placeholder Image';">
             <div>
-                <h2 class="text-3xl md:text-4xl font-extrabold mb-6">Expanding our reach across the Middle East</h2>
+                <h2 class="text-3xl md:text-4xl font-extrabold mb-6">Expanding Our Reach Across the Middle East</h2>
                 <p class="text-lg mb-4 font-regular">
                     As a forward-thinking company, RWN Construction FZCO has ambitious plans for regional expansion. Our goal is to extend our footprint to new markets and territories, leveraging our expertise and proven track record.
                 </p>
@@ -217,10 +231,10 @@
 
     <section id="contact" class="py-16 md:py-24 bg-gray-100">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-extrabold text-corporate-black text-center mb-12">Let's build something great together</h2>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-corporate-black text-center mb-12">Let's Build Something Great Together</h2>
             <div class="grid md:grid-cols-2 gap-12">
                 <div class="bg-corporate-white p-8 rounded-lg shadow-xl">
-                    <h3 class="text-2xl font-extrabold text-corporate-black mb-6">Send us a message</h3>
+                    <h3 class="text-2xl font-extrabold text-corporate-black mb-6">Send Us a Message</h3>
                     <form action="#" method="POST">
                         <div class="mb-4">
                             <label for="contact-name" class="block text-corporate-black mb-2 font-regular">Name</label>
@@ -230,15 +244,19 @@
                             <label for="contact-email" class="block text-corporate-black mb-2 font-regular">Email</label>
                             <input type="email" id="contact-email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-corporate-blue focus:border-corporate-blue" required>
                         </div>
+                         <div class="mb-4">
+                            <label for="contact-subject" class="block text-corporate-black mb-2 font-regular">Subject</label>
+                            <input type="text" id="contact-subject" name="subject" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-corporate-blue focus:border-corporate-blue">
+                        </div>
                         <div class="mb-6">
                             <label for="contact-message" class="block text-corporate-black mb-2 font-regular">Your Message</label>
                             <textarea id="contact-message" name="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-corporate-blue focus:border-corporate-blue" required></textarea>
                         </div>
-                        <button type="submit" class="w-full bg-corporate-blue text-corporate-white px-6 py-3 rounded-md font-regular hover:bg-opacity-90 cta-button">Submit inquiry</button>
+                        <button type="submit" class="w-full bg-corporate-blue text-corporate-white px-6 py-3 rounded-md font-regular hover:bg-opacity-90 cta-button">Submit Inquiry</button>
                     </form>
                 </div>
                 <div class="space-y-6">
-                     <h3 class="text-2xl font-extrabold text-corporate-black mb-4">Contact details</h3>
+                     <h3 class="text-2xl font-extrabold text-corporate-black mb-4">Contact Details</h3>
                      <div class="bg-corporate-white p-6 rounded-lg shadow-md">
                         <h4 class="text-lg font-extrabold text-corporate-blue mb-2">Email</h4>
                         <p class="text-gray-700 font-regular"><a href="mailto:rwnconstructionfzco@gmail.com" class="hover:underline">rwnconstructionfzco@gmail.com</a></p>
@@ -261,10 +279,7 @@
 
     <footer class="bg-corporate-black text-corporate-white py-8">
         <div class="container mx-auto px-6 text-center">
-            <div class="text-xl font-extrabold mb-4">
-                RWN CONSTRUCTION FZCO
-            </div>
-            <p class="text-sm font-regular mb-4">
+            <img src="logo.png" alt="RWN Construction FZCO Logo" class="logo-footer mx-auto mb-4"> <p class="text-sm font-regular mb-4">
                 Your trusted partner for quality construction materials in the Middle East.
             </p>
             <nav class="flex justify-center space-x-4 mb-4 font-regular">
